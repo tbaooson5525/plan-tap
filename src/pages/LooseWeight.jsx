@@ -68,22 +68,24 @@ export default function LooseWeight() {
             </div>
             <div className='text-center'>
                 <h2 className='text-xl italic font-semibold'>Lịch tập cardio</h2>
-                <p>
+                <p className='my-3'>
                     Tuần 1 - tuần 4: 3 buổi x 30 phút/buổi <br/>
                     Tuần 5 - tuần 8: 4 buổi x 30 phút/buổi <br/>
                     Tuần 9 - 12: 5 buổi x 30 phút/buổi 
                 </p>
+                <img src="/slogan2.jpg" alt="Câu nói động lực tập ý nghĩa" />
             </div>
-            <div>
-                <h2>Weekly meal plan (cái này thấy trên cùng 1 page nên là để tham khảo thoi)</h2>
+            <div className='text-center my-5'>
+                <h2 className='text-xl italic font-semibold'>Weekly meal plan </h2>
+                <p>(cái này thấy trên cùng 1 page nên là để tham khảo thoi)</p>
                 <div>
                     {mealPlan.map((plan, index) => {
                         return (
                             <div key={index}>
-                                <h3 className='text-center'>{plan.date}</h3>
-                                <p>{plan.breakfast}</p>
-                                <p>{plan.lunch}</p>
-                                <p>{plan.dinner}</p>
+                                <h3 className='text-xl italic uppercase font-semibold underline'>{plan.date}</h3>
+                                <p className='text-left'>{plan.breakfast}</p>
+                                <p className='text-left'>{plan.lunch}</p>
+                                <p className='text-left'>{plan.dinner}</p>
                             </div>
                         )
                     })}

@@ -51,7 +51,7 @@ export default function Day1() {
     ]
     return (
         <div>
-            <button className='p-5 rounded-full border-2 bg-blue-500 text-white w-full' onClick={handleOpen}>Ngày 1: Upper body</button>
+            <button className='p-5 rounded-full bg-blue-500 text-white w-full my-2' onClick={handleOpen}>Ngày 1: Upper body</button>
             {day1Plan.map((plan) => {
                 if(!isOpened) {
                     return null
